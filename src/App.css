@@ -4,3 +4,131 @@
   padding: 2rem;
   text-align: center;
 } */
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2%;
+  border: 1px solid red;
+}
+
+.actions{
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  gap: 12px;
+}
+
+.intro{
+  display: flex;
+  flex-direction: row;
+}
+
+.subIntro{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.title{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-basis: 25%;
+  border: 1px solid red;
+}
+
+.items{
+  flex-basis: 25%;
+  border: 1px solid blue;
+}
+
+.coffe{
+  flex-basis: 50%;
+  border: 1px solid green;
+}
+
+.coffeList{
+
+  border: 1px solid black;
+}
+
+.subCoffeList{
+  display: flex;
+  flex: row;
+  padding: 0 2%;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid red;
+}
+
+.filters{
+  display: flex;
+  gap: 5px;
+}
+
+.list{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 1px solid blue;
+}
+
+.coffeCards{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin: 0;
+  padding: 0;
+  height: 30rem;
+}
+
+.cardsList{
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  list-style-type: none;
+  margin: 0.5rem;
+  width: 16rem;
+  height: 25rem;
+  border-radius: 6px 36px;
+  background: var(--base-card);
+  border: 1px solid yellowgreen;
+}
+
+.buyDiv{
+  display: flex;
+  flex-direction: column;
+}
+
+.coffeImg{
+  width: 7.5rem;
+  height: 7.5rem;
+}
+
+.footerActionBuy{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.actionBuy{
+  display: flex;
+  flex-direction: row;
+  width: 7rem;
+  justify-content: space-between;
+}
+
+.actionBuy button{
+  width: 38px;
+  height: 38px;
+}
+
+.countAmount{
+  display: flex;
+  justify-content: space-between;
+  width: 4.5rem;
+}
