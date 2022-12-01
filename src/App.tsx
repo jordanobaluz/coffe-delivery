@@ -1,3 +1,4 @@
+import { ShoppingCart } from 'phosphor-react'
 import './App.css'
 import './global.css'
 
@@ -55,7 +56,7 @@ function App() {
                       <div>1</div>
                       <div>+</div>
                     </div>
-                    <button className="carButton">Carrinho</button>
+                    <button className="carButton"><ShoppingCart size={22} /></button>
                   </div>
                   </footer>
                 </div>
@@ -74,7 +75,7 @@ function App() {
                       <div>1</div>
                       <div>+</div>
                     </div>
-                    <button className="carButton">Carrinho</button>
+                    <button className="carButton"><ShoppingCart size={22} /></button>
                   </div>
                   </footer>
                 </div>
@@ -93,7 +94,7 @@ function App() {
                       <div>1</div>
                       <div>+</div>
                     </div>
-                    <button className="carButton">Carrinho</button>
+                    <button className="carButton"><a href=""><ShoppingCart size={22} /></a></button>
                   </div>
                   </footer>
                 </div>
@@ -112,7 +113,7 @@ function App() {
                       <div>1</div>
                       <div>+</div>
                     </div>
-                    <button className="carButton">Carrinho</button>
+                    <button className="carButton"><a href=""><ShoppingCart size={22} /></a></button>
                   </div>
                   </footer>
                 </div>

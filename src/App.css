@@ -148,3 +148,9 @@
   background: var(--base-button);
   color: var(--purple-300);
 }
+
+.carButton a{
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+}
