@@ -1,7 +1,8 @@
-import { ShoppingCart } from 'phosphor-react'
+import { BrowserRouter } from "react-router-dom"
 import { ThemeProvider } from 'styled-components'
-import './App.css'
+import { ShoppingCart } from 'phosphor-react'
 import './global.css'
+import { Router } from './Routes'
 import { GlobalStyle } from './styles/global'
 import { defaultTheme } from './styles/theme/default'
 
@@ -10,6 +11,9 @@ function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <GlobalStyle />
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
     </ThemeProvider>
       )
 }
