@@ -1,5 +1,12 @@
+import CoffeLogo from "../../assets/CoffeLogo.svg"
+import { HeaderContainer } from "./styles";
+
 export function Header() {
     return (
-        <h1>HEADER</h1>
+        <HeaderContainer>
+            <div className="container">
+                <img src={CoffeLogo}/>
+            </div>
+        </HeaderContainer>
     )
 }
