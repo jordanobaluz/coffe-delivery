@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components"
 
-export const GlobalStyle = createGlobalStyle `
+export const GlobalStyle = createGlobalStyle`
 * {
     margin: 0;
     padding: 0;
@@ -27,4 +27,15 @@ button {
 a{
     text-decoration: none;
 }
+
+//  modifica o alinhamento no input do CardBotton
+input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
 `;
