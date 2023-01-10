@@ -42,11 +42,33 @@ export const HeaderButton = styled.button<HeaderButtonProps>`
     padding: 0 0.5rem;
     position: relative;
     font-size: ${(props) => props.theme.textSizes["text-regular-s"]};
+    cursor: inherit;
+
+    //transforma em uma bolinha a quantidade de items no carrinho
+    span {
+        position: absolute;
+        width: 1.25rem;
+        height: 1.25rem;
+        border-radius: 50%;
+        top: calc(-1.25rem / 2);
+        right: calc(-1.25rem / 2);
+        color: ${({ theme }) => theme.colors["base-white"]};
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.75rem;
+        font-weight: 700;
+    }
 
     // validação para definir se será purple ou yellow
     ${({variant, theme}) => css`
         background: ${theme.colors[`brand-${variant}-light`]};
-        color: ${theme.colors[`brand-${variant}-dark`]}
+        color: ${theme.colors[`brand-${variant}-dark`]};
+
+        span{
+            background: ${({ theme }) => theme.colors[`brand-${variant}-dark`]};
+        }
     `}
 
     ${({variant, theme}) => variant === "purple" && css`
