@@ -5,6 +5,7 @@ import './global.css'
 import { Router } from './Routes'
 import { GlobalStyle } from './styles/global'
 import { defaultTheme } from './styles/theme/default'
+import { CartContextProvider } from "./contexts/CartContext"
 
 function App() {
 
@@ -12,7 +13,9 @@ function App() {
     <ThemeProvider theme={defaultTheme}>
       <GlobalStyle />
       <BrowserRouter>
+      <CartContextProvider>
         <Router />
+      </CartContextProvider>
       </BrowserRouter>
     </ThemeProvider>
       )
