@@ -13,6 +13,7 @@ interface CartContextType {
     addCoffeeToCart: (coffee: CartItem) => void
     changeCartItemQuantity: (cartItemId: number, type: 'increase' | 'decrease') => void;
     removeCartItem: (cartItemId: number) => void;
+    cleanCart: () => void;
 }
 
 interface CartContextProviderProps {
@@ -91,6 +92,11 @@ export function CartContextProvider({children}: CartContextProviderProps){
         setCartItems(newCart)
     }
 
+    // limpa o carrinho ao finalizar a compra
+    function cleanCart(){
+        setCartItems([])
+    }
+
     //sempre que os itens do carrinho forém alterados será gravado
     useEffect(() => {
         //primeiro argumento é a chave de onde será armazenado, segundo argumento é o valor que será armazenado
@@ -98,7 +104,7 @@ export function CartContextProvider({children}: CartContextProviderProps){
     }, [cartItems])
 
     return(
-        <CartContext.Provider value={{ cartItems, cartQuantity,cartItemsTotal, addCoffeeToCart, changeCartItemQuantity, removeCartItem}}>
+        <CartContext.Provider value={{ cartItems, cartQuantity,cartItemsTotal, addCoffeeToCart, changeCartItemQuantity, removeCartItem, cleanCart}}>
             {children}
         </CartContext.Provider>
     )
