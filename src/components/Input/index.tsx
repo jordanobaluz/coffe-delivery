@@ -12,10 +12,12 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
     ({error, className, rightText, ...props}, ref) => {
         return (
             <InputWrapper className={className}>
+                {/* Se não for preenchido, propriedades hasError é ativado exibindo em vermelho mensagem para preencher */}
                 <InputStyleContainer hasError={!!error}>
                     <InputStyled {...props} ref={ref} />
                     {rightText && <RightText>{rightText}</RightText>}
                 </InputStyleContainer>
+                {/* Só é exibido se hasError for verdadeiro  */}
                 {error && <RegularText size="s">{error}</RegularText>}
             </InputWrapper>
         )

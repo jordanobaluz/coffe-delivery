@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 import { IconContainer, InfoWithIconContainer } from "./styles";
 
 interface InfoWithIconProps {
-    icon: ReactNode
+    icon: ReactNode // ReactNode, que pode ser qualquer elemento React, incluindo componentes personalizados
     text: string | ReactNode // pode ser tanto texto como HTML
     iconBg: string
 }

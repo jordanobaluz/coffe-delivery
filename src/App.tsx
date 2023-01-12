@@ -1,6 +1,5 @@
 import { BrowserRouter } from "react-router-dom"
 import { ThemeProvider } from 'styled-components'
-import { ShoppingCart } from 'phosphor-react'
 import './global.css'
 import { Router } from './Routes'
 import { GlobalStyle } from './styles/global'

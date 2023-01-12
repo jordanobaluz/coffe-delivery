@@ -20,7 +20,8 @@ export function Header() {
                     </HeaderButton>
                     <HeaderButton variant="yellow">
                         <NavLink to="/completeOrder">
-                            {cartQuantity >= 1 && <span>{cartQuantity}</span>}
+                            {//só renderiza se tiver item no carrinho renderiza o span exibindo quantos itens tem
+                            cartQuantity >= 1 && <span>{cartQuantity}</span>}
                             <ShoppingCart size={20} weight="fill" />
                         </NavLink>
                     </HeaderButton>
